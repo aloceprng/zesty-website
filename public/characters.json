@@ -6,7 +6,8 @@
             "default": "./models/zester_default.glb",
             "wave": "./models/zester_wave.glb"
         },
-        "description": "zester is the mayor of ZESTYville",
+        "description": "Zester is the mayor of ZESTYville. As he is SO talented, he offers a World Tour, plays a banjo in Rock Band, and goes to The Camp -weekly.",
+        "statement" : "We focus on entertainment because ZESTYville is so full of life. For those interested, ZESTYville is open to tourists! The only requirement for entry is a declaration of one's salary.",
         "favourite": "orange"
     },
     {
@@ -15,7 +16,8 @@
         "model": {
             "default": "./models/orange_default.glb"
         },
-        "description": "zester",
-        "favourite": "orange"
+        "description": "orange orange orange orange orange orange orange orange orange orange orange orange orange orange orange orange orange orange orange",
+        "statement": "orange orange orange orange orange orange orange orange orange orange orange orange orange orange orange",
+        "favourite": "zester"
     }
 ]
