@@ -10,6 +10,7 @@ export default function Character() {
     const [character, setCharacter] = useState(null);
 
     useEffect(() => {
+        setCharacter(null);
         fetch('/characters.json')
         .then(response => response.json())
         .then(data => {                
