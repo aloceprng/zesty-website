@@ -1,4 +1,4 @@
-import Menu from "../components/Menu";
+import Menu from "./Menu";
 import { Canvas } from '@react-three/fiber';
 import { Suspense, useState } from 'react';
 import { Environment, OrbitControls } from '@react-three/drei';
@@ -11,6 +11,11 @@ export default function Hero() {
     <div className="hero">
       <Menu />
       <div className="canvas">
+        {isHovered && 
+          <div className="text">
+            <p>this is zester! </p>
+            <p>you can spin him</p>
+          </div>}
         <Canvas 
           camera={{ position: [0, 0.5, 2.5], fov: 80 }}
           onMouseEnter={() => setIsHovered(true)}

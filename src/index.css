@@ -8,7 +8,7 @@
 }
 
 :root {
-  --red: #ff4300;
+  --red: #ff2600;
   --orange: #ff7000;
   --lime: #d7ff00;
   --green: #429841;
@@ -27,26 +27,46 @@ button:hover, a:hover {cursor: pointer;}
 
 @font-face {
   font-family: 'B612Mono';
-  src: url('public/fonts/B612Mono/B612Mono-Regular.ttf') format('truetype');
+  src: url('/fonts/B612Mono/B612Mono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'B612Mono';
-  src: url('public/fonts/B612Mono/B612Mono-Bold.ttf') format('truetype');
+  src: url('/fonts/B612Mono/B612Mono-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'B612Mono';
-  src: url('public/fonts/B612Mono/B612Mono-Italic.ttf') format('truetype');
+  src: url('/fonts/B612Mono/B612Mono-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
+}
+
+@font-face {
+  font-family: 'Tanker';
+  src: url('/fonts/Tanker-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @keyframes fade-in {
   0%   { opacity: 0; }
   100% { opacity: 100%; }
+}
+
+@keyframes wave {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}
+
+.scroll {
+  .letter {
+      display: inline-block;
+      animation: wave 2.4s ease-in-out infinite;
+  }
 }

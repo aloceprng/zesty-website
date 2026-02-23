@@ -84,20 +84,21 @@ export default function About() {
                     <p>
                         as i look back, each project under the ZESTY franchise has meticulous planning
                         underlying its development. i had made a working vending machine that dispensed
-                        orange keychains with foam board and paper mache:
+                        orange keychains with foam board and paper mache.
                     </p>
-                    <Carousel type="machine" />
                     <p> 
                         most recently, Zester has undergone a redesign before i modelled him for this
-                        very site. his proportions were never consistent as i ade his products, so i 
-                        started with that.
+                        very site. his proportions were never consistent as i made his products, so i 
+                        started with refiguring out his size and shape.
                     </p>
                     <Carousel type="process" />
                     <p>
-                        something about wanting to make a website something about wanting to make
-                        a website dafdssomething about wanting to make a website sometdfasdfhing
-                        about wanting to make a website somasdfething about wanting to make a
+                        as i branched out into more digital mediums, i've come across and was inspired 
+                        by many creative websites. this site serves as my exploration of web design,
+                        of hover effects and animations, 3D modelling, rigging, design systems, and so
+                        much more. 
                     </p>
+                    <p> i hope you had fun! </p>
                 </section>
             </div>
         </div>

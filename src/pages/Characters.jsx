@@ -1,8 +1,7 @@
 import Model from "../components/Model";
+import Scroll from "../components/Scroll";
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -22,14 +21,13 @@ export default function Characters() {
                 {characters.map((c) => (
                     <Link to={`/characters/${c.name}`} key={c.name}
                     onMouseEnter={() => setActiveCharacter(c)}>
-                        {c === activeCharacter ? <FontAwesomeIcon className="icon" icon={faCircle}/> : null}
                         <p>{c.name}</p> 
                     </Link>  
                 ))}
             </div>
             <div className="character-container">
                 {activeCharacter ? 
-                    <Canvas camera={{ position: [0, 0.5, 2.5], fov: 80 }}>
+                    <Canvas camera={{ position: [0, 0.5, 2], fov: 80 }} >
                         <ambientLight intensity={0.2} color="0xfdfff4"/>
                         <directionalLight position={[5, 10, 5]} intensity={0.2} />
                         <OrbitControls 
@@ -38,7 +36,7 @@ export default function Characters() {
                         />
                         <Environment preset="city" />
                         <Model name={activeCharacter.name} state="default" position={[0, -1.25, 0]}/>
-                    </Canvas> : <p>select a character!</p>
+                    </Canvas> : <Scroll text="< select a character!"/>
                 }
             </div>
         </div>

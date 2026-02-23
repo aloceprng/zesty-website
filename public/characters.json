@@ -6,7 +6,7 @@
             "default": "./models/zester_default.glb",
             "wave": "./models/zester_wave.glb"
         },
-        "description": "zester",
+        "description": "zester is the mayor of ZESTYville",
         "favourite": "orange"
     },
     {
@@ -14,26 +14,6 @@
         "name": "orange",
         "model": {
             "default": "./models/orange_default.glb"
-        },
-        "description": "zester",
-        "favourite": "orange"
-    },
-    {
-        "id": 1,
-        "name": "zester",
-        "model": {
-            "default": "./models/zester_default.glb",
-            "wave": "./models/zester_wave.glb"
-        },
-        "description": "zester",
-        "favourite": "orange"
-    },
-    {
-        "id": 1,
-        "name": "zester",
-        "model": {
-            "default": "./models/zester_default.glb",
-            "wave": "./models/zester_wave.glb"
         },
         "description": "zester",
         "favourite": "orange"

@@ -16,7 +16,7 @@ export default function Home() {
     
     }, []);
 
-    return ( //home-page is sticky wrapper
+    return (
         <>
             <div className="home-page page"> 
                 <Hero />
