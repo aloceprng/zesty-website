@@ -9,7 +9,7 @@
       const params = new URLSearchParams(window.location.search);
       const path = params.get('path');
       if (path) {
-        window.history.replaceState(null, '', '/zesty-website' + path);
+        window.history.replaceState(null, '', path || '/');
       }
     </script>
     <script type="module" crossorigin src="/zesty-website/assets/index-BZFShQjG.js"></script>
