@@ -11,7 +11,7 @@ export default function Character() {
 
     useEffect(() => {
         setCharacter(null);
-        fetch('/characters.json')
+        fetch(`${import.meta.env.BASE_URL}characters.json`)
         .then(response => response.json())
         .then(data => {                
             const ch = data.find(ch => characterName === ch.name);
@@ -24,7 +24,7 @@ export default function Character() {
     return (
         <div className="character-page page">
             <div className="character-container">
-                <Canvas camera={{ position: [0, 0.5, 2], fov: 80 }}>
+                <Canvas key={character.name} camera={{ position: [0, 0.5, 2], fov: 80 }}>
                     <ambientLight intensity={0.2} color="0xfdfff4"/>
                     <directionalLight position={[5, 10, 5]} intensity={0.2} />
                     <OrbitControls 

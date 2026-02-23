@@ -1,13 +1,14 @@
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleInfo, faAddressBook, faBook } from '@fortawesome/free-solid-svg-icons';
+import logo from '../assets/logo.png';
 
 export default function Menu() {
     return (
         <nav>
             <div className="left">
                 <Link to="/" className="nav-link">
-                    <img src="/src/assets/logo.png"/>
+                    <img src={logo}/>
                 </Link>
             </div>
             <div className="right">

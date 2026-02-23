@@ -10,13 +10,13 @@ export default function Characters() {
     const [activeCharacter, setActiveCharacter] = useState(null);
 
     useEffect(() => {
-        fetch('/characters.json')
+        fetch(`${import.meta.env.BASE_URL}characters.json`)
         .then(response => response.json())
         .then(data => setCharacters(data));
     }, []);
 
     return(
-        <div className="characters-page page" style={{ height: window.innerHeight - 90 }}>
+        <div className="characters-page page" style={{ height: "calc(100vh - 90px)" }}>
             <div className="name-container" onMouseLeave={() => setActiveCharacter(null)}>
                 {characters.map((c) => (
                     <Link to={`/characters/${c.name}`} key={c.name}
